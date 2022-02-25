@@ -2,7 +2,7 @@
 
 Instructions:
 
-1. Download the files in this repo to your local machine. You can either download the files individually or download them together in a tar.gz format. You do not need to download the README files, .gitignore, .gitattributes, nor desktop.ini.
+1. Download three files/folders in this repo to your local machine: homework.html, homework.Rmd, and the data folder. 
 
 Please do not fork this repository to your own account to avoid your solutions from inadvertently becoming public.
 
