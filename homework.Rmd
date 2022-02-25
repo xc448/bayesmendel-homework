@@ -1,0 +1,57 @@
+---
+title: "Homework"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Statistics warm-up
+
+Consider a random variable $X$ with a probability density function
+
+$$
+f(x) = \frac{c}{\sqrt{x(b-x)}}, \quad 0<x<b,
+$$
+where $c$ is a normalising constant and $b$ is a parameter.
+
+* Find $c$ such that the probability density function is valid.
+
+* Find the corresponding cumulative distribution function, $F(x)$ and its inverse $F^{-1}(x)$.
+
+* Describe a procedure to generate samples distributed according to $X$, given a set of uniformly distributed samples $u_1,\dots,u_n \sim \mathcal{U}[0,1]$.
+
+* Set the seed to 42 and generate 1,000 samples distributed according to $X$ using 1,000 uniformly distributed i.i.d. $\mathcal{U}[0,1]$ samples, with $b=5$. Plot a histogram of the resulting samples.
+
+* Assume that we have a set of samples $X_1,\dots,X_n$ which are i.i.d. as $X$ with $b$ unknown. Find the log-likelihood function for the parameter $b$, $\ell(b;x_1,\dots,x_n)$ and find its derivative with respect to $b$, $\frac{d\ell}{db}$.
+
+* Based on the likelihood, or otherwise, give a statistic based on $X_1,\dots,X_n$ which is a reasonable estimator for the unknown parameter $b$. Explain your choice.
+
+* The file `samples.rds` contains samples $X_1,\dots,X_n$ distributed according to $X$. Report the estimated value of $\hat{b}$ based on those samples.
+
+## Arrays
+
+You are given a multi-dimensional array `array.rds`. It contains penetrance curves for various cancers and genes. In simple terms, penetrances are how likely one will develop a cancer given that they have a certain corresponding gene mutation. Other variables in `data` describe different sub-populations. For example, the probabilities corresponding to `Brain` cancer and gene `APC` are the probabilities for which a person will develop brain cancer, given that they have a mutation in the `APC` gene.
+
+* Read in the data and give the dimensions of the array. 
+
+_Hint: Use the `str` function._
+
+* Subset the array for the penetrances associated with `Breast` cancer and the `BRCA2` gene for a female with the default race `All_Races`. Then plot the penetrance curve (probability versus age).
+
+* Subset the array for the penetrances associated with `Colorectal` cancer and the `PALB2` gene for an Asian male. What is the probability that a person from this subpopulation at age 50 will develop colorectal cancer in the next 10 years given that he has tested positive for a PALB2 mutation but is otherwise disease free?
+
+## Family pedigrees
+
+Read in the `.rdata` file `pedigree.rda`. Each `data.frame` represents a family. Each individual is uniquely identified by the first column called `ID`. Their sex is coded as `0` for females and `1` for males. Individuals' mother and father are indicated in the `MotherID` and `FatherID` columns. A value of `NA` in these columns means that this person is a so-called 'founder' or that a certain parent is missing.
+
+Each pedigree can be thought of as a family tree. For example, a visualisation of a sample pedigree is shown below. The colours indicate affliction status for cancers as labelled in the legend.
+
+![](sample_pedigree.png)
+
+In the following exercises, you are encouraged to modularise and comment on your code. 
+
+* Write an R function(s) to count the number of unique nuclear families there are in a certain pedigree. A nuclear family is defined as the set of two parents and all of their children.
+
+* Report the number of nuclear families for the pedigrees contained in the `.rda` file.
