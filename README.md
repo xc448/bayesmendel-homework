@@ -2,11 +2,15 @@
 
 Instructions:
 
-1. Fork this repository to your own GitHub account.
+1. Download the files in this repo to your local machine. You can either download the files individually or download them together in a tar.gz format. You do not need to download the README files, .gitignore, .gitattributes, nor desktop.ini.
+
+The homework.html file contains an easy to read version of the homework so that is a good file to start with.
 
 2. On the `homework.Rmd` file, fill in your responses to the questions using an editor or IDE such as RStudio. Where R code is required, use R code chunks: see [this link](https://rmarkdown.rstudio.com/lesson-3.html). For larger functions, you can move your code to another script. Partial credit may be given where incomplete solutions are provided. Attempt as many questions as you can.
 
-3. 'Knit' the your final `.Rmd` document to produce an `.html` file. Push this to your fork then and send us the link to this file.
+3. 'Knit' the your final `.Rmd` document to produce an `.html` file. 
+
+4. Email your completed knitted .html file and your .Rmd file back to the lab member who provided you with this homework assignment.
 
 
 Notes:
