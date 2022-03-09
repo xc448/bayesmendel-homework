@@ -6,11 +6,11 @@ Instructions:
 
 Please do not fork this repository to your own account to avoid your solutions from inadvertently becoming public.
 
-The homework.html file contains an easy to read version of the homework so that is a good file to start with.
+The homework.html file contains an easy to read version of the homework so that file is a good starting point.
 
 2. On the `homework.Rmd` file, fill in your responses to the questions using an editor or IDE such as RStudio. Where R code is required, use R code chunks: see [this link](https://rmarkdown.rstudio.com/lesson-3.html). For larger functions, you can move your code to another script. Partial credit may be given where incomplete solutions are provided. Attempt as many questions as you can.
 
-3. 'Knit' the your final `.Rmd` document to produce an `.html` file. 
+3. 'Knit' your final `.Rmd` document to produce an `.html` file. 
 
 4. Email your completed knitted .html file and your .Rmd file back to the lab member who provided you with this homework assignment.
 
